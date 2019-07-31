@@ -1,0 +1,4614 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sheffield computer science",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ModuleIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "what is {ModuleCode} like",
+                        "tell me about {ModuleCode}",
+                        "what is {ModuleCode}",
+                        "what is {ModuleCode} about",
+                        "describe {ModuleCode}",
+                        "explain {ModuleCode}",
+                        "explain to me {ModuleCode}",
+                        "describe to me {ModuleCode}",
+                        "about {ModuleCode}",
+                        "about {ModuleName} ",
+                        "what is {ModuleName} like",
+                        "tell me about {ModuleName}",
+                        "what is {ModuleName}",
+                        "describe {ModuleName}",
+                        "explain {ModuleName}",
+                        "explain to me {ModuleName}",
+                        "describe to me {ModuleName}",
+                        "what is {ModuleName} about"
+                    ]
+                },
+                {
+                    "name": "ModuleAllIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "everything about {ModuleCode}",
+                        "all about {ModuleCode}",
+                        "everything there is to know about {ModuleCode}",
+                        "everything about {ModuleName}",
+                        "all about {ModuleName}",
+                        "everything there is to know about {ModuleName}"
+                    ]
+                },
+                {
+                    "name": "ModuleSummaryIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        " a summary about {ModuleCode}",
+                        "a description about {ModuleCode} ",
+                        "description of {ModuleCode}",
+                        " a summary of {ModuleCode}",
+                        " a module summary of {ModuleCode}",
+                        " a summary for {ModuleCode}",
+                        " a summary of {ModuleName}",
+                        " a summary about {ModuleName}",
+                        "a description about {ModuleName} ",
+                        "description of {ModuleName}",
+                        " a summary for {ModuleName}",
+                        " a module summary of {ModuleName}",
+                        "about the module {ModuleName}",
+                        "about the module {ModuleCode}"
+                    ]
+                },
+                {
+                    "name": "ModuleSessionIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "When is {ModuleCode} taught",
+                        "semester is {ModuleCode} taught",
+                        "semester is {ModuleCode} ",
+                        "session is {ModuleCode} taught",
+                        "session is {ModuleCode}",
+                        "When is {ModuleName} taught",
+                        "semester is {ModuleName} taught",
+                        "semester is {ModuleName} ",
+                        "session is {ModuleName} taught",
+                        "session is {ModuleName}",
+                        "semester {ModuleName} is in",
+                        "session {ModuleName} is in",
+                        "semester {ModuleCode} is in",
+                        "session {ModuleCode} is in"
+                    ]
+                },
+                {
+                    "name": "ModuleCreditsIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "credits is {ModuleCode}",
+                        "credits is {ModuleCode} worth",
+                        "credits are in {ModuleCode}",
+                        "credits in {ModuleCode}",
+                        "credits of {ModuleCode}",
+                        "credits is {ModuleName}",
+                        "credits is {ModuleName} worth",
+                        "credits are in {ModuleName}",
+                        "credits in {ModuleName}",
+                        "credits of {ModuleName}",
+                        "credits {ModuleName}",
+                        "credits {ModuleCode}"
+                    ]
+                },
+                {
+                    "name": "ModuleAssessmentIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "assessment methods of {ModuleName}",
+                        "assessment methods of {ModuleCode}",
+                        "assessment methods for {ModuleName}",
+                        "assessment methods for {ModuleCode}",
+                        "how {ModuleCode} is assessed",
+                        "how is {ModuleCode} assessed",
+                        "assessment of {ModuleCode}",
+                        "assessment in {ModuleCode}",
+                        "how {ModuleName} is assessed",
+                        "how is {ModuleName} assessed",
+                        "assessment of {ModuleName}",
+                        "assessment in {ModuleName}",
+                        "module {ModuleCode} is assessed",
+                        "module {ModuleName} is assessed"
+                    ]
+                },
+                {
+                    "name": "ModuleLecturersIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "who teaches {ModuleCode}",
+                        "who teachers {ModuleCode}",
+                        "who lectures {ModuleCode}",
+                        "teacher of {ModuleCode}",
+                        "lecturer of {ModuleCode}",
+                        "teacher for {ModuleCode}",
+                        "lecturer for {ModuleCode}",
+                        "who teaches {ModuleName}",
+                        "who teachers {ModuleName}",
+                        "who lectures {ModuleName}",
+                        "teacher of {ModuleName}",
+                        "lecturer of {ModuleName}",
+                        "teacher for {ModuleName}",
+                        "lecturer for {ModuleName}",
+                        "lectura for {ModuleName}",
+                        "lectura of {ModuleName}"
+                    ]
+                },
+                {
+                    "name": "ModuleAimsIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "the aims of {ModuleCode}",
+                        "aims of {ModuleCode}",
+                        "aims in {ModuleCode}",
+                        "the names of {ModuleCode}",
+                        "names of {ModuleCode}",
+                        "names in {ModuleCode}",
+                        "targets of {ModuleCode}",
+                        "targets in {ModuleCode}",
+                        "the aims of {ModuleName}",
+                        "aims of {ModuleName}",
+                        "aims in {ModuleName}",
+                        "targets of {ModuleName}",
+                        "targets in {ModuleName}",
+                        "the names of {ModuleName}",
+                        "names of {ModuleName}",
+                        "names in {ModuleName}"
+                    ]
+                },
+                {
+                    "name": "ModuleObjectivesIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "objectives of {ModuleCode}",
+                        "objectives in {ModuleCode}",
+                        "objectives of {ModuleName}",
+                        "objectives in {ModuleName}",
+                        "purpose of {ModuleName}",
+                        "purpose in {ModuleName}",
+                        "purpose of {ModuleCode}",
+                        "purpose in {ModuleCode}"
+                    ]
+                },
+                {
+                    "name": "ModuleContentIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "what is the content of {ModuleCode}",
+                        "what is the content in {ModuleCode}",
+                        "what is the content of {ModuleName}",
+                        "what is the content in {ModuleName}",
+                        "content in {ModuleCode}",
+                        "content of {ModuleName}",
+                        "content in {ModuleName}",
+                        "content of {ModuleCode}",
+                        "content for {ModuleName}",
+                        "content for {ModuleCode}"
+                    ]
+                },
+                {
+                    "name": "ModuleTeachingIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "how {ModuleCode} is taught",
+                        "how is {ModuleCode} taught",
+                        "teaching of {ModuleCode}",
+                        "teaching in {ModuleCode}",
+                        "how {ModuleName} is taught",
+                        "how is {ModuleName} taught",
+                        "teaching of {ModuleName}",
+                        "teaching in {ModuleName}"
+                    ]
+                },
+                {
+                    "name": "ModuleFeedbackIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "feedback for the {ModuleName}",
+                        "feedback for the {ModuleCode}",
+                        "feedback of {ModuleCode}",
+                        "feedback in {ModuleCode}",
+                        "feedback for {ModuleCode}",
+                        "feedback of {ModuleCode} like",
+                        "feedback of {ModuleName}",
+                        "feedback for {ModuleName}",
+                        "feedback in {ModuleName}",
+                        "feedback of {ModuleName} like"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CoursesOfferedIntent",
+                    "slots": [],
+                    "samples": [
+                        "courses on offer",
+                        "the courses",
+                        "courses are there",
+                        "about the courses",
+                        "courses do you have",
+                        "courses are offered",
+                        "courses do you offer",
+                        "courses you offer",
+                        "are the different courses",
+                        "the different courses are",
+                        "can i study",
+                        "courses can i study",
+                        "courses are on offer"
+                    ]
+                },
+                {
+                    "name": "IndustryYearIntent",
+                    "slots": [
+                        {
+                            "name": "IndustryYear",
+                            "type": "IndustryYear",
+                            "samples": [
+                                "yes"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "of the {IndustryYear}",
+                        " a summary about the {IndustryYear}",
+                        " a summary of the {IndustryYear}",
+                        "about the {IndustryYear}",
+                        "what is the {IndustryYear}",
+                        "in the {IndustryYear}"
+                    ]
+                },
+                {
+                    "name": "DCSInfoIntent",
+                    "slots": [
+                        {
+                            "name": "DepartmentName",
+                            "type": "DepartmentName"
+                        }
+                    ],
+                    "samples": [
+                        "about {DepartmentName}",
+                        "what is {DepartmentName}",
+                        "describe {DepartmentName}",
+                        "depict {DepartmentName}",
+                        "characterize {DepartmentName}"
+                    ]
+                },
+                {
+                    "name": "DCSContactIntent",
+                    "slots": [
+                        {
+                            "name": "DepartmentName",
+                            "type": "DepartmentName"
+                        }
+                    ],
+                    "samples": [
+                        "contact {DepartmentName}",
+                        "{DepartmentName} contact details",
+                        "get in touch with {DepartmentName}",
+                        "communicate with {DepartmentName}"
+                    ]
+                },
+                {
+                    "name": "DCSLocationIntent",
+                    "slots": [
+                        {
+                            "name": "DepartmentName",
+                            "type": "DepartmentName"
+                        }
+                    ],
+                    "samples": [
+                        "position of {DepartmentName}",
+                        "where is {DepartmentName}",
+                        "where {DepartmentName} is",
+                        "whereabouts of {DepartmentName}",
+                        "location of {DepartmentName} "
+                    ]
+                },
+                {
+                    "name": "CourseEntryIntent",
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName"
+                        }
+                    ],
+                    "samples": [
+                        "the entry requirements of {CourseName}",
+                        "the entry requirements for {CourseName}",
+                        "the entry requirements in {CourseName}",
+                        "the entry standards of {CourseName}",
+                        "the entry standards for {CourseName}",
+                        "the entry standards in {CourseName}",
+                        "requirements in {CourseName}",
+                        "requirements of {CourseName}",
+                        "requirements for {CourseName}"
+                    ]
+                },
+                {
+                    "name": "CourseCodeIntent",
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName"
+                        }
+                    ],
+                    "samples": [
+                        " ucas code {CourseName}",
+                        " ucas code in {CourseName}",
+                        " ucas code of {CourseName}",
+                        " ucas code for {CourseName}",
+                        " code {CourseName}",
+                        " code in {CourseName}",
+                        " code of {CourseName}",
+                        " code for {CourseName}",
+                        " u. k. s.in {CourseName}",
+                        " u. k. s.of {CourseName}",
+                        " u. k. s.for {CourseName}",
+                        " u. k. in {CourseName}",
+                        " u. k. of {CourseName}",
+                        " u. k. for {CourseName}",
+                        "u. k."
+                    ]
+                },
+                {
+                    "name": "CourseInfoIntent",
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName"
+                        }
+                    ],
+                    "samples": [
+                        "what is {CourseName} like",
+                        "tell me about {CourseName}",
+                        "what is {CourseName}",
+                        "describe {CourseName}",
+                        "explain {CourseName}",
+                        "explain to me {CourseName}",
+                        "describe to me {CourseName}",
+                        "explain what {CourseName} is about"
+                    ]
+                },
+                {
+                    "name": "FavouriteModuleAddIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        },
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "Favourites",
+                            "type": "Favourites"
+                        }
+                    ],
+                    "samples": [
+                        "add {ModuleCode} to my {Favourites}",
+                        "put {ModuleCode} into my {Favourites}",
+                        "insert {ModuleCode} to my {Favourites}",
+                        "insert {ModuleCode} in my {Favourites}",
+                        "place {ModuleCode} in my {Favourites}",
+                        "add {ModuleName} to my {Favourites}",
+                        "put {ModuleName} into my {Favourites}",
+                        "insert {ModuleName} to my {Favourites}",
+                        "insert {ModuleName} in my {Favourites}",
+                        "place {ModuleName} in my {Favourites}"
+                    ]
+                },
+                {
+                    "name": "FavouriteModuleDeleteIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode"
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        },
+                        {
+                            "name": "Favourites",
+                            "type": "Favourites"
+                        }
+                    ],
+                    "samples": [
+                        "remove {ModuleCode} from my {Favourites}",
+                        "delete {ModuleCode} from my {Favourites}",
+                        "remove {ModuleName} from my {Favourites}",
+                        "delete {ModuleName} from my {Favourites}",
+                        "erase {ModuleName} from my {Favourites}",
+                        "erase {ModuleCode} from my {Favourites}",
+                        "discard {ModuleName} from my {Favourites}",
+                        "discard {ModuleCode} from my {Favourites}"
+                    ]
+                },
+                {
+                    "name": "FavouriteModuleClearIntent",
+                    "slots": [
+                        {
+                            "name": "Favourites",
+                            "type": "Favourites"
+                        },
+                        {
+                            "name": "FavouritesClearHelpers",
+                            "type": "FavouritesClearHelpers"
+                        }
+                    ],
+                    "samples": [
+                        "{FavouritesClearHelpers} empty my {Favourites}",
+                        "{FavouritesClearHelpers} clear my {Favourites}",
+                        "{FavouritesClearHelpers} clear the contents of my {Favourites}",
+                        "{FavouritesClearHelpers} empty the contents of my {Favourites}",
+                        "{FavouritesClearHelpers} delete my {Favourites}",
+                        "{FavouritesClearHelpers} empty the {Favourites}",
+                        "{FavouritesClearHelpers} clear the {Favourites}",
+                        "{FavouritesClearHelpers} clear the contents of the {Favourites}",
+                        "{FavouritesClearHelpers} empty the contents of the {Favourites}",
+                        "{FavouritesClearHelpers} delete the {Favourites}",
+                        "empty my {Favourites}",
+                        "clear my {Favourites}",
+                        "clear the contents of my {Favourites}",
+                        "empty the contents of my {Favourites}",
+                        "delete my {Favourites}",
+                        "empty the {Favourites}",
+                        "clear the {Favourites}",
+                        "clear the contents of the {Favourites}",
+                        "empty the contents of the {Favourites}",
+                        "delete the {Favourites}"
+                    ]
+                },
+                {
+                    "name": "FavouriteModuleListIntent",
+                    "slots": [
+                        {
+                            "name": "Favourites",
+                            "type": "Favourites"
+                        }
+                    ],
+                    "samples": [
+                        "tell me the contents of my {Favourites}",
+                        "in the {Favourites}",
+                        "what is in my {Favourites}",
+                        "what are my {Favourites}",
+                        "what are the contents of my {Favourites}",
+                        "contained in my {Favourites}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.MoreIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateSettingsIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PageDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FAQIntent",
+                    "slots": [
+                        {
+                            "name": "FAQ",
+                            "type": "FAQ"
+                        }
+                    ],
+                    "samples": [
+                        "{FAQ}"
+                    ]
+                },
+                {
+                    "name": "LecturerInfoIntent",
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname"
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname"
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title"
+                        }
+                    ],
+                    "samples": [
+                        "information on {LecturerFname} {LecturerSname}",
+                        "information on {Title} {LecturerSname}",
+                        "who is {Title} {LecturerSname}",
+                        "describe {Title} {LecturerSname}",
+                        "tell me about {Title} {LecturerSname}",
+                        "of {Title} {LecturerSname}",
+                        "for {Title} {LecturerSname}",
+                        "who is {LecturerFname} {LecturerSname}",
+                        "description about {Title} {LecturerSname}",
+                        "description about {LecturerFname} {LecturerSname}",
+                        "describe {LecturerFname} {LecturerSname}",
+                        "tell me about {LecturerFname} {LecturerSname}",
+                        "of {LecturerFname} {LecturerSname}",
+                        "for {LecturerFname} {LecturerSname}",
+                        "information about {LecturerFname} {LecturerSname}",
+                        "information about {Title} {LecturerSname}",
+                        "biography for {LecturerFname} {LecturerSname}",
+                        "biography for {Title} {LecturerSname}"
+                    ]
+                },
+                {
+                    "name": "LecturerContactIntent",
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname"
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname"
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title"
+                        }
+                    ],
+                    "samples": [
+                        "contact {Title} {LecturerSname}",
+                        "get in touch with {Title} {LecturerSname}",
+                        "contact {LecturerFname} {LecturerSname}",
+                        "details of {LecturerFname} {LecturerSname}",
+                        "get in touch with {LecturerFname} {LecturerSname}",
+                        "communicate with {LecturerFname} {LecturerSname}",
+                        "communicate with {Title} {LecturerSname}",
+                        "details for {LecturerFname} {LecturerSname}",
+                        "details for {Title} {LecturerSname}",
+                        "details of {Title} {LecturerSname}",
+                        "email address of {Title} {LecturerSname}",
+                        "email address of {LecturerFname} {LecturerSname}",
+                        "email address for {Title} {LecturerSname}",
+                        "email address for {LecturerFname} {LecturerSname}",
+                        "number of {Title} {LecturerSname}",
+                        "number of {LecturerFname} {LecturerSname}",
+                        "number for {Title} {LecturerSname}",
+                        "number for {LecturerFname} {LecturerSname}"
+                    ]
+                },
+                {
+                    "name": "LecturerGroupIntent",
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname"
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname"
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title"
+                        }
+                    ],
+                    "samples": [
+                        "group of {Title} {LecturerSname}",
+                        "group is {Title} {LecturerSname} in",
+                        "group is {LecturerFname} {LecturerSname} in",
+                        "group {Title} {LecturerSname}",
+                        "group {LecturerFname} {LecturerSname}",
+                        "group of {LecturerFname} {LecturerSname} in",
+                        "group is {Title} {LecturerSname}",
+                        "group is {LecturerFname} {LecturerSname}",
+                        "group of {LecturerFname} {LecturerSname}",
+                        "research group {Title} {LecturerSname}",
+                        "research group {LecturerFname} {LecturerSname}",
+                        "research interests {Title} {LecturerSname}",
+                        "research interests {LecturerFname} {LecturerSname}"
+                    ]
+                },
+                {
+                    "name": "TimetableIntent",
+                    "slots": [
+                        {
+                            "name": "TimetableUnitCode",
+                            "type": "TimetableUnitCode"
+                        },
+                        {
+                            "name": "TimetableUnitTitle",
+                            "type": "TimetableUnitTitle"
+                        }
+                    ],
+                    "samples": [
+                        "the classes in {TimetableUnitCode}",
+                        "the classes of {TimetableUnitCode}",
+                        "the classes for {TimetableUnitCode}",
+                        "the lectures for {TimetableUnitCode}",
+                        "the lectures of {TimetableUnitCode}",
+                        "the lectures in {TimetableUnitCode}",
+                        "{TimetableUnitCode} classes are",
+                        "{TimetableUnitTitle} classes are",
+                        "are the {TimetableUnitCode} classes ",
+                        "are the {TimetableUnitTitle} lectures",
+                        "{TimetableUnitCode} lectures are",
+                        "{TimetableUnitTitle} lectures are",
+                        "the classes in {TimetableUnitTitle}",
+                        "the classes of {TimetableUnitTitle}",
+                        "the classes for {TimetableUnitTitle}",
+                        "the lectures for {TimetableUnitTitle}",
+                        "the lectures of {TimetableUnitTitle}",
+                        "the lectures in {TimetableUnitTitle}",
+                        "the timetable of {TimetableUnitCode}",
+                        "the timetable for {TimetableUnitCode}",
+                        "the timetable of {TimetableUnitTitle}",
+                        "the timetable for {TimetableUnitTitle}",
+                        "the time table of {TimetableUnitCode}",
+                        "the time table for {TimetableUnitCode}",
+                        "the time table of {TimetableUnitTitle}",
+                        "the time table for {TimetableUnitTitle}",
+                        "the labs of {TimetableUnitCode}",
+                        "the labs for {TimetableUnitCode}",
+                        "the labs of {TimetableUnitTitle}",
+                        "the labs for {TimetableUnitTitle}",
+                        "the labs of {TimetableUnitCode}",
+                        "the labs for {TimetableUnitCode}",
+                        "the labs of {TimetableUnitTitle}",
+                        "the labs for {TimetableUnitTitle}",
+                        "the tutorials of {TimetableUnitCode}",
+                        "the tutorials  for {TimetableUnitCode}",
+                        "the tutorials  of {TimetableUnitTitle}",
+                        "the tutorials  for {TimetableUnitTitle}"
+                    ]
+                },
+                {
+                    "name": "CoursesOfferedFlowIntent",
+                    "slots": [
+                        {
+                            "name": "CourseType",
+                            "type": "CourseType"
+                        }
+                    ],
+                    "samples": [
+                        "{CourseType}"
+                    ]
+                },
+                {
+                    "name": "CourseInfoFlowIntent",
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName"
+                        }
+                    ],
+                    "samples": [
+                        "{CourseName}"
+                    ]
+                },
+                {
+                    "name": "LecturerTeachesIntent",
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname"
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname"
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title"
+                        }
+                    ],
+                    "samples": [
+                        "{Title} {LecturerSname} teach",
+                        "{Title} {LecturerSname} teaches",
+                        "modules of {Title} {LecturerSname}",
+                        "modules that {Title} {LecturerSname} teaches",
+                        "taught by {Title} {LecturerSname}",
+                        "{LecturerFname} {LecturerSname} teach",
+                        "{LecturerFname} {LecturerSname} teaches",
+                        "modules of {LecturerFname} {LecturerSname}",
+                        "modules that {LecturerFname} {LecturerSname} teaches",
+                        "taught by {LecturerFname} {LecturerSname}"
+                    ]
+                },
+                {
+                    "name": "LecturerModuleIntent",
+                    "slots": [
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName"
+                        }
+                    ],
+                    "samples": [
+                        "{ModuleName}"
+                    ]
+                },
+                {
+                    "name": "FAQSearchIntent",
+                    "slots": [
+                        {
+                            "name": "Search",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "find {Search}",
+                        "search for {Search}",
+                        "search {Search}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ModuleCode",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "com 1001"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 1002"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 1003"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 1005"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 1006"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 1008"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 1009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2001"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2002"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2003"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2004"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2005"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2008"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2107"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2108"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 2109"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3001"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3002"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3004"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3005"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3008"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3105"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3110"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3190"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3240"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3301"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3310"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3330"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3420"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3500"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3501"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3502"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3503"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3504"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3505"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3517"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3550"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 3610"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4115"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4501"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4502"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4503"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4506"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4507"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4509"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4510"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4511"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4513"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4515"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4519"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4520"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4521"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 4525"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6011"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6012"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6013"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6014"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6015"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6016"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6017"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6063"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6102"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6103"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6104"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6105"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6106"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6115"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6116"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6222"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6322"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6471"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6501"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6502"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6503"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6504"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6506"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6507"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6509"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6510"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6511"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6513"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6515"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6516"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6517"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6519"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6520"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6521"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6534"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6535"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6650"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6655"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6905"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6906"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6910"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6911"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "com 6912"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Introduction to Software Engineering"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Foundations of computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Java Programming"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Machines and Intelligence"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Devices and Networks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Web and Internet Technology"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Introduction to Algorithms and Data Structures"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Programming Topics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Human Centred Systems Design"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Automata, Logic and computation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Data Driven computing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bio-Inspired computing and Robotics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Systems Design and Security"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Human-Machine Interaction and Robotics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Logic in computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Functional Programming"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Automata, computation and complexity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Modelling and Simulation of Natural Systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Algorithms"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Text Processing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Theory of Distributed Systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adaptive Intelligence"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Experiencing Genesys"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mainframe computing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Critical Evaluation of Industrial Opinion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software Hut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Individual Research Project "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "computer Security and Forensics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Speech Processing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3D computer Graphics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Intelligent Web"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Internet of Things"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Web Technologies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Undergraduate Ambassadors Scheme in computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dissertation Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "#NAME?"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Testing and Verification in Safety-Critical Systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software and Hardware Verification"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Machine Learning and Adaptive Intelligence"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software Development for Mobile Devices"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Speech Technology"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Natural Language Processing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Network Performance Analysis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cloud computing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Darwin Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Parallel computing with Graphical Processing Units (GPUs)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Genesys"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maxi Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scalable Machine Learning"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cybersecurity and AI Dissertation Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fundamental Security Properties and Mechanisms"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Development of Secure Software"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cyber Threat Hunting and Digital Forensics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Security of Control and Embedded Systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Network and Internetwork Architectures"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Java Programming "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Team Software Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Team Software Project (SSIT)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software Engineering for Internet Technology\t"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "computational Intelligence Individual Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Foundations of Object Oriented Programming"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Object Oriented Programming and Software Design"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Introduction to Genesys"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Professional Issues in IT"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Professional Issues"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Research Methods and Professional Issues"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Industrial Team Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Data Analytics Dissertation Project"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "IndustryYear",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "industrial placements"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "industry placements"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "industrial year"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "year in industry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Industry Year"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DepartmentName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Department for Computer science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DCS",
+                                "synonyms": [
+                                    "D.C.S"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DCS Sheffield",
+                                "synonyms": [
+                                    "D.C.S. Sheffield"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Department of computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sheffield Computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sheffield dcs"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CourseName",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Artificial Intelligence and Computer Science",
+                                "synonyms": [
+                                    "artificial intelligence"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software Engineering"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Software Engineering"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Data Analytics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software Systems and Internet Technology",
+                                "synonyms": [
+                                    "internet technology",
+                                    "software systems"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cybersecurity and Artificial Intelligence",
+                                "synonyms": [
+                                    "cybersecurity"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Computer Science with Speech and Language Processing",
+                                "synonyms": [
+                                    "speech and language processing",
+                                    "speech and language"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FAQ",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "entry requirements for 2019"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "number of women"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "What is the ratio of women on the course"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "study overseas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "can i study abroad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "differences between computer science and software engineering"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "difference between computer science and software engineering"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fee rates overseas students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fee rates home students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "course assessment"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "how are the courses assessed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "careers go into"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "careers do graduates"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "meet my offer grades"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "currently on a industry year"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fees for home students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fees for overseas students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jobs do people do"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "careers do people do"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jobs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "entry standards"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "if i am in clearing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "entry requirements"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "apply in clearing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "offer grades"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no a level maths"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "not doing a level maths"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three a levels and an epq"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three a levels and an e p q"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "careers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "typical timetable"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "timetable"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "courses assessed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "first class degree"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fee rates for home students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fee rate for home students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fee rates for overseas students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fee rate for overseas students"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "computer science and software engineering"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "study abroad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ratio of women"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "currently on a year in industry"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Favourites",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "list of favourites"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "favourite",
+                                "synonyms": [
+                                    "favorite"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "favourites",
+                                "synonyms": [
+                                    "favorites"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "favourites list",
+                                "synonyms": [
+                                    "favorites list"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FavouritesClearHelpers",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "please"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "would you"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "can you"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LecturerFname",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Achim"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Andrew"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dirk"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dawn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dennis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Elif"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Emma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Eleni"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fabio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Guy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Georg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Heidi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hamish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Haiping"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "John"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jochen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "James"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Joab"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kirill"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kalina"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lucia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mauricio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maria-Cruz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mark"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mike"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nikos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Neil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Philip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Phil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pietro"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Paul"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Richard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rob"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Roger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ramsay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Steve"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Siobhan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sebastian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Thomas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tony"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vitaveska"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Winston"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yoshi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Yorick"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LecturerSname",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Brucker",
+                                "synonyms": [
+                                    "brooker"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Simons"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stratton"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sudholt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Walker"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wang"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kavun"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Norling"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vasilaki"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ciravegna"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Brown"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Struth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Christensen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cunningham"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lu"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Barker"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Clark"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Derrick"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Leidner"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Marshall"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Winkler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bogdanov"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Bontcheva"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Specia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ãlvarez"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Villa-Uriol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hepple"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Holcombe"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mangan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stannett"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Stevenson"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Aletras"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lawrence"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Walkinshaw"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "McMinn",
+                                "synonyms": [
+                                    "mc minn",
+                                    "mcminn"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Oliveto"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Peng"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Richmond"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Watton"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Clayton"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gaizauskas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hierons"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Moore"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Taylor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Maddock"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "North"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Ordyniak"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Prescott"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lanfranchi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gotoh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Wilks"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Title",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Mrs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Miss"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Mr"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Professor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Doctor",
+                                "synonyms": [
+                                    "Dr"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TimetableUnitCode",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "COM1001"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM1002"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM1003"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM1005"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM1006"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM1009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM160"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM162"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM2001"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM2003"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM2009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM2107"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM2109"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3001"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3105"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3190"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3240"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3301"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3330"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3420"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3500"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3501"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3504"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3517"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3550"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM3610"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM364"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4000"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4501"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4507"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4511"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4513"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4515"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4519"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4520"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4521"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM4525"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6009"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6012"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6015"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6017"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6102"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6103"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6104"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6106"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6116"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6501"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6504"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6507"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6511"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6513"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6515"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6517"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6519"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6521"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6535"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6905"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COM6911"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TimetableUnitTitle",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Introduction to Software Engineering"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Foundations of Computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Java Programming"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Machines and Intelligence"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Devices and Networks"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Introduction to Algorithms and Data Structures"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Computer Problem Solving and Object Oriented Design"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Object Oriented Design and Programming with Java"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Programming Topics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Automata Logic and Computation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Human-Machine Interaction and Robotics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Logic in Computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Automata Computation and Complexity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Modelling and Simulation of Natural Systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Algorithms"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Theory of Distributed Systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Adaptive Intelligence"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Experiencing Genesys"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Critical Evaluation of Industrial Opinion and Business Strategy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software Hut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Individual Research Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Computer Security and Forensics"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The Intelligent Web"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Web Technologies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Undergraduate Ambassadors Scheme in Computer Science"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dissertation Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Logic and Computation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Bioengineering Research Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Software and Hardware Verification"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Speech Technology"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Natural Language Processing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Network Performance Analysis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cloud Computing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Darwin Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Parallel Computing with Graphical Processing Units (GPUs)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Genesys"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Scalable Machine Learning"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Development of Secure Software"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Security of Control and Embedded Systems"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Advanced Java Programming"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Team Software Project"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Team Software Project (SSIT)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Genesys 2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Research Methods and Professional Issues"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Industrial Team Project"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CourseType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "postgraduate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "post graduate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "undergraduate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "under graduate"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "ModuleSummaryIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.666695860415.766237055551.642415261044"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.666695860415.222712897033.808232138441"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleSessionIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.676488378720.719990294043.1498732782797"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.676488378720.688025529881.249197461654"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleCreditsIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.999884982870.848112156037.551843265793"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.999884982870.715755176380.373637818517"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleAssessmentIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1308388351009.1183049821148.1245422382881"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1308388351009.1535942639001.1487838753460"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleLecturersIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.978492017546.1093149144657.581859874738"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.978492017546.573678852944.260157725851"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleAimsIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1470847733089.820885598085.1144676221200"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1470847733089.1236582623436.1292742637384"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleObjectivesIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.661779544862.1195529607224.1067235561689"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.661779544862.404101723859.640919615841"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleContentIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.978014934083.901805324954.1099852468426"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.978014934083.1207067909344.486476116091"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleTeachingIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1320726384692.265437642164.408801481082"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1320726384692.1137994591870.923262768953"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleFeedbackIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1488420482357.938456330707.1463539978068"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1488420482357.782700805613.1019697445052"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleAllIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.87133168929.445905533526.1024373252222"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.87133168929.466575296958.1319871332988"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ModuleIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1537134633084.158607015168.551820545488"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1537134633084.135529308755.391105969573"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "IndustryYearIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "IndustryYear",
+                            "type": "IndustryYear",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.267636261037.1390191278091"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FavouriteModuleAddIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1133980848806.1139148910158.615330842054"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1133980848806.390499696409.410018231367"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Favourites",
+                            "type": "Favourites",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "FavouriteModuleDeleteIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleCode",
+                            "type": "ModuleCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.688204070062.262907592224.1058055534232"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.688204070062.1213753183277.931503848296"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Favourites",
+                            "type": "Favourites",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "FAQIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "FAQ",
+                            "type": "FAQ",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "FavouriteModuleClearIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Favourites",
+                            "type": "Favourites",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "FavouritesClearHelpers",
+                            "type": "FavouritesClearHelpers",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "CourseEntryIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1223133890713.264139001720.101016386812"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CourseCodeIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.846555562827.84993717816.371190316222"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CourseInfoIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.51237882012.1069867799119.1454540415794"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CoursesOfferedFlowIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "CourseType",
+                            "type": "CourseType",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1462708762368.1358847087456"
+                            },
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.366417011976.410581922247.1470092979673"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CourseInfoFlowIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "CourseName",
+                            "type": "CourseName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1259226215784.218056641727.397643648936"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "LecturerModuleIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ModuleName",
+                            "type": "ModuleName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.129945718574.1120605427425.189070823712"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "DCSLocationIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "DepartmentName",
+                            "type": "DepartmentName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "LecturerInfoIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.792606578128.1289671787882.503050904976"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.792606578128.474652436938.331394990108"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.792606578128.337364070474.1547178768673"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "LecturerContactIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.125235890938.784989057013.921302254342"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.125235890938.585838638422.1445683838119"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.125235890938.359011743269.474349391436"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "LecturerGroupIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1457028012652.557386773320.1494658458774"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1457028012652.1354572529673.1424893888824"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.1457028012652.841063944330.1060530505276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "TimetableIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "TimetableUnitCode",
+                            "type": "TimetableUnitCode",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.829058078467.1359904546269.582214444171"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "TimetableUnitTitle",
+                            "type": "TimetableUnitTitle",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.829058078467.407994566345.1335567217276"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "LecturerTeachesIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "LecturerFname",
+                            "type": "LecturerFname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.779620350680.839362883134.1269368912378"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "LecturerSname",
+                            "type": "LecturerSname",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.779620350680.1138651704804.1118920323489"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Title",
+                            "type": "Title",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "hasEntityResolutionMatch",
+                                    "prompt": "Slot.Validation.779620350680.1373521757170.382312467410"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Slot.Validation.666695860415.766237055551.642415261044",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.666695860415.222712897033.808232138441",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.676488378720.719990294043.1498732782797",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.676488378720.688025529881.249197461654",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.999884982870.848112156037.551843265793",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.999884982870.715755176380.373637818517",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1308388351009.1183049821148.1245422382881",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1308388351009.1535942639001.1487838753460",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.978492017546.1093149144657.581859874738",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.978492017546.573678852944.260157725851",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1470847733089.820885598085.1144676221200",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1470847733089.1236582623436.1292742637384",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.661779544862.1195529607224.1067235561689",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.661779544862.404101723859.640919615841",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.978014934083.901805324954.1099852468426",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.978014934083.1207067909344.486476116091",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1320726384692.265437642164.408801481082",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1320726384692.1137994591870.923262768953",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1488420482357.938456330707.1463539978068",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1488420482357.782700805613.1019697445052",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.87133168929.445905533526.1024373252222",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.87133168929.466575296958.1319871332988",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1537134633084.158607015168.551820545488",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1537134633084.135529308755.391105969573",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Please say that again with a valid module code or name"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.267636261037.1390191278091",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "did you mean to ask about a year in industry?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1133980848806.1139148910158.615330842054",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid module name or code"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1133980848806.390499696409.410018231367",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid module name or code"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.688204070062.262907592224.1058055534232",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid module name or code"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.688204070062.1213753183277.931503848296",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid module name or code"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1223133890713.264139001720.101016386812",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid course name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.846555562827.84993717816.371190316222",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid course name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.51237882012.1069867799119.1454540415794",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid course name"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1462708762368.1358847087456",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You can choose between either under graduate or post graduate courses, which would you like?"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1259226215784.218056641727.397643648936",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please provide a valid course name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.366417011976.410581922247.1470092979673",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please provide a valid course type"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.129945718574.1120605427425.189070823712",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please provide a valid module name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.792606578128.1289671787882.503050904976",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.792606578128.474652436938.331394990108",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.792606578128.337364070474.1547178768673",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.125235890938.784989057013.921302254342",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.125235890938.585838638422.1445683838119",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.125235890938.359011743269.474349391436",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1457028012652.557386773320.1494658458774",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1457028012652.1354572529673.1424893888824",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.1457028012652.841063944330.1060530505276",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.829058078467.1359904546269.582214444171",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid module name or code"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.829058078467.407994566345.1335567217276",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid module name or code"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.779620350680.839362883134.1269368912378",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.779620350680.1138651704804.1118920323489",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.779620350680.1373521757170.382312467410",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "please say that again with a valid lecturer name"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" xml:lang="en" lang="en">
+<!--<![endif]-->
+<head><title>
+	AskUS
+</title><meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" /><meta name="application-name" content="Tribal ESD - Enterprise Service Desk" /><link href="/bundles/bootstrapstyle?v=RaYtSvnMtQQmddvbkTg6Wce69jfvL3ZtzZGW2g47C241" rel="stylesheet"/>
+<link href="/bundles/auxStyles?v=7DI3VLovWFCYUkhOI6IQhqx3WD0reUUsQ4F64axqWMw1" rel="stylesheet"/>
+<link href="/bundles/KingAdminCSS?v=TXVSRGP4fsWapiRl--xykk6A76rG9DxQFcC59DCYRhQ1" rel="stylesheet"/>
+
+
+    <!--[if lte IE 9]>
+         <link href="/bundles/KingAminPolyCSS?v=m9nTvHnU7PvbcKnswxZiNo03CfxmTqtKpoXJhLllYvw1" rel="stylesheet"/>
+
+            <![endif]-->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css" /><link href="/bundles/ESD3Master?v=BXMN5z3-nVNSeETGYPrTH3zNuUvpbsvN5EQ3gMXtXdU1" rel="stylesheet"/>
+
+    <style type="text/css">
+        .panel {
+            border: none;
+        }
+    </style>
+    <style>
+/* Bar Color For Different Environments 
+DEV - #BE3B39
+TEST - #DB6123
+TRAIN - #009C88
+LIVE - #0797D9
+*/
+
+div.top-bar {
+    border-bottom: 5px solid #0797D9 !important;
+}
+
+</style>
+<div class="col-sm-12 col-xs-6 uosblue" style="padding-top: 1px;">
+<img class="uos-logo" src="/site_custom/img/logo.svg">
+</div>
+<link rel='icon' href='/images/favicon.ico' type='image/x-icon' /></head>
+<body id="BodyTag" class="dashboard">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a id="aUpgradeBrowser" title="Upgrade you browser" target="_blank" href="http://browsehappy.com/">upgrade your browser form BroswerHappy.com (opens new window) </a> or <a target="_blank" title="Activate Google Chrome" href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame for Internet Explorer (opens new window)</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- WRAPPER -->
+    <div id="esdOuterWrapper" class="wrapper">
+
+        <!-- ESD PAGE HEADER RECORD FROM DATA -->
+        <div class="esd-page-header">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <header id="esdPageHeaderLogin_Container">
+                        
+                    </header>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div id="esdPageContentFAQ_Container" class="col-md-12 content-wrapper" style="margin: 0 auto;">
+            <!-- main -->
+            <div class="content">
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div role="application" accesskey="4" id="esdApplicationFAQ" tabindex="0">
+                                
+    
+    
+    <div id="faqSearchPanel" class="row faq-row hidden-print">
+        <div id="searchBar" class="col-xs-12">
+            <form class="faq-search-form" action="GuestFaqSearch.aspx" onsubmit="return SearchSubmit();">
+                <div class="well">
+                    <label for="search ">
+                        <span id="lblSearchAnswer"><b>Search for an Answer</b></span></label>
+                    <div id="faqSearchPanelTrans">
+	
+                        <div class="search-group input-group">
+                            <div class="ui-widget">
+                                <input name="s" id="search" type="text" class="search form-control" placeholder="Type your question here">
+                                <input name="CCTC" id="searchHidden" type="hidden" class="search form-control">
+                            </div>
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    Search
+                                </button>
+                            </span>
+                        </div>
+                    
+</div>
+                    <br />
+                </div>                 
+            </form>
+        </div>
+    </div>
+
+    
+    <div id="AllDivDetailsFAQGuest" class="panel panel-default faq-panel">
+        <div class="col-lg-9 ">
+
+            <div class="panel-heading faq-panel-heading hidden-print">
+                <div class="row">
+
+                    <div class="col-sm-7 col-xs-12">
+                        <div id="headerTextFaqDetail" class="h4 faq-header-text ">FAQ 195</div>
+                        <div class="faq-spacer clearfix visible-xs"></div>
+                    </div>
+                    <div class="col-sm-5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="processingRequestImage"></div>
+            <div class="faq-response"></div>
+
+            <div class="panel-body panel-faq">
+
+                <div id="question" class="h3 faq-question">I have a Conditional offer with the University of Sheffield. Why is a decision about whether you can confirm my place not showing on UCAS Track?</div>
+                <div id="answer"><p><p><span style="font-family: docs-Calibri; font-size: 15px; white-space: pre-wrap;"><p>If our decision on your application isn't showing on UCAS Track this may be because we're still awaiting certain results required to confirm your place with us.</p><p>If you've received confirmation of these results before a decision is confirmed in UCAS Track, you can update us directly by calling +44 114 222 8014.</p><p>We guarantee to accept any Firm offer-holder who meets the conditions of their offer and whose results are confirmed by 31 August at the end of the academic year in which they applied. Unfortunately we cannot guarantee to accept offer-holders whose results are not confirmed until after 31 August.</p><p>If a result is likely to be delayed until after 31 August, please let us know and we may be able to extend the deadline. Alternatively, we may be able to arrange for an Unconditional offer to be deferred to the following year.</p></span><br></p></p></div>
+                <div id="textEditor"></div>
+                
+                
+            </div>
+            <a href="https://askus.sheffield.ac.uk/faqs/GuestFaq.aspx?CCTC=PROSTU&code=A3&group=50" id="aBackToSearchResults" class="hidden-print btn btn-default" title="Click to go back to results">
+                <em class="fa fa-chevron-left"></em>&nbsp;
+                Back to results</a>
+
+        </div>
+        <div class="col-lg-3 hidden-print">
+            
+            <div id="pnlRecentlyViewed">
+	
+                <div class="well faq-recently-viewed hidden-print">
+                    <div>
+                        <p class="text-center"><strong>Recently viewed</strong></p>
+                    </div>
+                    
+                            <div class="list-group">
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=196" class="list-group-item text-center">How do I release myself from Sheffield into Clearing?</a>
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=197" class="list-group-item text-center">I Advance Registered my interest in a Clearing or Adjustment place. When will I hear from you?</a>
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=186" class="list-group-item text-center">How can I find out about Adjustment and Clearing at the University of Sheffield?</a>
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=187" class="list-group-item text-center">How can I apply for a Clearing or Adjustment place at the University of Sheffield?</a>
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=188" class="list-group-item text-center">Is there a limit to the number of Clearing or Adjustment places I can apply for at Sheffield?</a>
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=189" class="list-group-item text-center">What happens after I have applied for a Clearing or Adjustment place using the online application form or via the Clearing and Adjustment Helpline?</a>
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=190" class="list-group-item text-center">How do I accept an offer of a Clearing place at Sheffield?</a>
+                        
+                            <a href="GuestFaq.aspx?CCTC=PROSTU&code=191" class="list-group-item text-center">How do I accept an offer of a place at Sheffield through Adjustment?</a>
+                        
+                            </div>
+                        
+                </div>
+            
+</div>
+        </div>
+        
+    </div>
+    <div>
+        
+
+    
+        <div id="innerHeader" class="h3 page-header"></div>
+        
+
+               
+       
+
+         
+     
+            
+    </div>
+    
+
+    <div id="FaqButtonPanelBackToStart" class="clearfix faq-panel-btn-backtostart">
+	
+    <div class="btn-group">
+        <div class="btn-group">
+            <hr />
+            <a href="/faqs/GuestFaq.aspx?CCTC=PROSTU" id="aBackToStart" class="hidden-print btn btn-default btn-backtostart" title="Click to go back to initial page view">
+                <em class="fa fa-angle-double-left"></em>
+                <span id="aBackToStartLabel">Back to start</span>
+            </a>
+    
+        </div>
+    </div>
+
+</div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="push-sticky-footer"></div>
+
+    <!-- /wrapper -->
+    <div class="clearfix"></div>
+    <!-- FOOTER -->
+    <footer id="esdPageFooterFAQ_Container">
+        <div class="row">
+            <div class="col-md-12">
+                
+    <div class="sv-footer-text sv-container">
+		<div class="sv-row">
+			<div class="sv-col-sm-3">
+				<ul class="sv-list-unstyled">
+					<li><a href="https://www.sheffield.ac.uk/contact" target="_blank">Contact us</a></li>
+					<li><a href="https://www.sheffield.ac.uk/visitors" target="_blank">Information for visitors</a></li>
+					<li><a href="https://www.sheffield.ac.uk/jobs" target="_blank">Jobs</a></li>
+					<li><a href="https://www.sheffield.ac.uk/alumni/donate/donate" target="_blank">Support us</a></li>
+				</ul>			
+			</div>
+			<div class="sv-col-sm-3">					
+				<ul class="sv-list-unstyled">	
+					<li><a href="https://www.sheffield.ac.uk/union" target="_blank">Students' Union</a></li>
+					<li><a href="https://www.sheffield.ac.uk/students" target="_blank">Current students</a></li>
+					<li><a href="https://www.sheffield.ac.uk/staff" target="_blank">Staff</a></li>
+				</ul>
+			</div>
+			<div class="sv-col-sm-3"></div>
+			<div class="sv-col-sm-3">
+				<address>
+                    The University of Sheffield<br>
+                    Western Bank<br>
+                    Sheffield, S10 2TN<br>
+                    UK
+                </address>
+			</div>
+		</div>
+		<div class="sv-row">
+			<!--<div class="sv-col-sm-1"><a href="" target="_blank">Feedback</a></div>-->
+			<div class="sv-col-sm-1"><a href="https://www.sheffield.ac.uk/privacy" target="_blank">Privacy</a></div>
+			<div class="sv-col-sm-2">&nbsp;</div>
+			<div class="sv-col-sm-1"><a href="https://www.sheffield.ac.uk/foi" target="_blank">FOI</a></div>
+			<div class="sv-col-sm-2"><a href="https://www.sheffield.ac.uk/procurement/suppliers-information" target="_blank">Information for suppliers</a></div>
+			<div class="sv-col-md-offset-3 sv-col-sm-3 sv-text-right">&copy; 2018 The University of Sheffield (<a href="#top">Go to top</a>)</div>
+		</div>
+		</div>
+
+<script type="text/javascript" src="/site_custom/js/sheffield_sid_custom.js">
+</script>
+<script>
+// Start Doc Ready
+$( document ).ready(function() {
+
+// Add a click function to auto select the Email Files option when adding an attachment 
+$('#StaffSummary_FilesPanelTab a').click(function(){
+    $('#staffSummaryPanelEmailFiles').prop('checked', true);
+});
+
+// Put a staff warning note on the New Enquiry Form for uploading documents.
+$('div#divCreateSemUpload .panel-footer').prepend('<b>Please be aware that attachments uploaded when creating a New Enquiry are not sent to the prospect.  <br />Please log the enquiry then use an Action to send the Attachment.</b>');
+
+// End Doc Ready
+});
+</script>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+    <div>
+        
+    <input name="ctl00$cph_HIDDENFIELDSFAQ$faqNavigationCodes" type="hidden" id="faqNavigationCodes" class="faqNavigationCodes" />
+    <input name="ctl00$cph_HIDDENFIELDSFAQ$faqSelectedCode" type="hidden" id="faqSelectedCode" class="faqSelectedCode" value="195" />
+
+    </div>
+
+
+    <div id="scriptLoad" style="display: none; visibility: hidden">
+
+
+
+        <script type="text/javascript" src="/bundles/jquery?v=KVlI-fyBB-Z8AxpOE7nGfeB4Lms7WAtGmiTFfQ0bG8s1?v=636872245239237687" ></script>
+
+        
+        <script type="text/javascript" src="/bundles/jqueryui?v=PFfoDyjJrzh6EVF2pJdQRL0k02ymfhZkLb6qtFkL2fA1?v=636872245239237687" ></script>
+
+        <script type="text/javascript" src="/bundles/plugins?v=KhQY8LYftcF27RsYEur1qlAWolJWHMCz4wLI5DSDb_g1?v=636872245239237687" ></script>
+
+        <script type="text/javascript" src="/bundles/bootstrapGuest?v=hvBTfOm019HQJqmg1Af4IpvkTb9eWIYe9f_1w1AoEM81?v=636872245239237687" ></script>
+
+        <script type="text/javascript" src="/bundles/templates?v=EndUFvJT7xOH_YyxNmOg7DlCWSv7AjtFXhtP43xq3481?v=636872245239237687" ></script>
+
+
+        
+        <script type="text/javascript" src="/bundles/KingAdminJS?v=btZSRQiXrMCr5QSaz4Yad79zdNEs63EX4W26WNEQg0w1?v=636872245239237687" ></script>
+
+        <script type="text/javascript" src="/bundles/esdScripts?v=QI7FAI8lUmySsAXTzMU4Go-ePaMXzUjkVZtabempFzQ1?v=636872245239237687" ></script>
+
+
+        
+    <script src="../javascript/faqs/guest-faq-page.js"></script>
+    <script src="../javascript/faqs/guest-faq-search.js"></script>
+
+
+
+        
+    </div>
+
+
+    <div role="region" aria-live="off">
+        <a href="#" class="back-to-top hidden-print" aria-hidden="true"><em class="fa fa-chevron-up" aria-label="Back to Top"><span class="backToTop" style="display: none;">Back to top</span></em></a>
+    </div>
+    <script>jQuery(document).ready(function () { jQuery('#ui-id-1').html('<li></li>') })</script>
+    <!--added for wc3 validation-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
