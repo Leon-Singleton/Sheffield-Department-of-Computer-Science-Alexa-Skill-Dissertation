@@ -67,7 +67,7 @@ Building the Interaction Model
 into the JSON editor located on the left-hand side of the development console.
 
 3. Using the lambda function ARN that you obtained earlier set the endpoint 
-to pint to this url as the default region. Save the endpoint.
+to point to this url as the default region. Save the endpoint.
 
 4. Make sure to build the Model at the top of the development console.
 
